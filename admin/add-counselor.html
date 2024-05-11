@@ -50,9 +50,7 @@
 
                 <!-- Divider -->
                 <hr class="sidebar-divider">
-                <!-- Divider -->
-                <hr class="sidebar-divider">
-
+                
                 <!-- Nav Item - Appointment Menu -->
                 <li class="nav-item">
                     <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
@@ -80,7 +78,7 @@
                     </a>
                     <div id="collapseThree" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                         <div class="bg-white py-2 collapse-inner rounded">
-                            <a class="collapse-item" href="add_patient.html">Add Patient</a>
+                            <a class="collapse-item" href="add-patient.html">Add Patient</a>
                             <a class="collapse-item" href="manage_patient.html">View Patient</a>
                         </div>
                     </div>
@@ -179,23 +177,23 @@
                                 <div class="card-body">
 
                                     <div class="form-group col-md-6">
-                                        <label for="patient_name">Counselor Full Name</label>
+                                        <label for="counselor_name">Counselor Full Name</label>
                                         <input type="text" class="form-control" id="patient_name" name="name" required>
                                     </div>
                                     <div class="form-group col-md-6">
-                                        <label for="patient_ic">IC No</label>
+                                        <label for="counselor_ic">IC No</label>
                                         <input type="text" class="form-control" id="patient_ic" name="ic" placeholder="000000-00-0000" required>
                                     </div>
                                     <div class="form-group col-md-4">
-                                        <label for="patientAge">Age</label>
+                                        <label for="counselor_age">Age</label>
                                         <input type="number" class="form-control" id="patientAge" name="patientAge" required>
                                     </div>
                                     <div class="form-group col-md-4">
-                                        <label for="patientBD">Birth Date</label>
+                                        <label for="counselor_BD">Birth Date</label>
                                         <input type="date" class="form-control" id="patientBD" name="patientBD">
                                     </div>
                                     <div class="form-group col-md-4">
-                                        <label for="patientGender">Gender</label>
+                                        <label for="counselor_gender">Gender</label>
                                         <select id="patientGender" class="form-control col-auto" required>
                                             <option selected>Gender</option>
                                             <option value="Male">Male</option>
@@ -203,17 +201,24 @@
                                         </select>
                                     </div>
                                     <div class="form-group col-md-4">
-                                        <label for="patientAddres">Address</label>
+                                        <label for="counselor_address">Address</label>
                                         <textarea id="address" name="patientAddress" rows="4" class="form-control" required>
                                                                                         
                                         </textarea>
                                     </div>
                                     <div class="form-group col-md-4">
-                                        <label for="patient_email">Email</label>
+                                        <label for="counselor_email">Email</label>
                                         <input type="email" class="form-control" id="patient_email" name="email" required>
                                     </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="counselor_password">Password</label>
+                                        <input type="password" class="form-control" id="counselor_password" name="password" aria-describedby="passwordHelpInline" required>
+                                        <small id="passwordHelpInline" class="text-muted">
+                                          Must be 8-20 characters long.
+                                        </small>
+                                    </div>
                                     <div class="form-group col-md-6">
-                                        <label for="patient_phone">Phone No</label>
+                                        <label for="counselor_phone">Phone No</label>
                                         <input type="tel" class="form-control" id="patient_phone" name="phone" placeholder="010-100100" required>
                                     </div>
 
